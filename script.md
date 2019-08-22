@@ -14,11 +14,13 @@ Viele dieser Aspekte sind unabhängig voneinander. So kann man z.B. mit JUnit ve
 
 ### "Mensch vs. Maschine", Mächtigkeit (weglassen?)
 *TODO Achsendiagramm? Am Ende? Wie sinnvoll ist so eine harte Gegenüberstellung überhaupt?*  
-| manuell/punktuell 					      |	automatisiert/systematisch |
-| Funktion/Feature über UI prüfen		|		Unit- oder Integrationstest |
-| parametrisierte Tests        			|		Property-based Tests |
-| Code auskommentieren						    |  Mutation Testing (z.B. PIT) |
-| UI-Test/visuelle Verifizierung			 |	Snapshot-Testing |
+
+manuell/punktuell 					      |	automatisiert/systematisch 
+--------------------------------- | -------------------------
+Funktion/Feature über UI prüfen		|	 Unit- oder Integrationstest 
+parametrisierte Tests        			|	 Property-based Tests 
+Code auskommentieren						  |  Mutation Testing (z.B. PIT) 
+UI-Test/visuelle Verifizierung		|	 Snapshot-Testing 
 
 ### Eigenschaften von Tests
 *TODO Zusammenhang mit Testpyramide\*/Aufteilung dieses Abschnitts*
