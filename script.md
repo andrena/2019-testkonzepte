@@ -6,7 +6,7 @@ Viele dieser Aspekte sind unabhängig voneinander. So kann man z.B. mit JUnit ve
 
 ### Testarten & -technologien
 *TODO im Verlauf vorstellen*
-- Test by example (Aufhänger > ?)
+- Test by example (> MAX z.B. erstes JUnit Example aus ASE Javaweb)
 - Property-based (> Florian) 
 - Mutation Testing (> David?)
 - Snapshot-Testing (> Max)
@@ -102,7 +102,5 @@ Wiederholbarkeit der Messung:
 ### TODOs
 - *TODO FLO MAX Beispiele für Testtechnologien finden*
 - *TODO MAX Dave ansprechen zu PIT*
-- *TODO MAX Repo aufsetzen auf andrena GitHub*
-- *TODO remark.js auf andrena.github.io*
-- *TODO FLO Doodle abklären*
+
 
