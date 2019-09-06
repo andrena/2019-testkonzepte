@@ -23,34 +23,21 @@ Code auskommentieren						  |  Mutation Testing (z.B. PIT)
 UI-Test/visuelle Verifizierung		|	 Snapshot-Testing 
 
 ### Eigenschaften von Tests
-*TODO Zusammenhang mit Testpyramide\*/Aufteilung dieses Abschnitts*
+*Einige Aspekte lassen sich in der Testpyramide verorten*
 
 Isolierungsgrad*:
 - hoch: Unit-/Microtests, Mocking
 - mittel: Komponenttests, Tests mit Context/Abhängigkeiten (Beans)
 - gering: Integrations-/Systemtests
 
-Zweck:
-- Dokumentation
-- Regressionsschutz
-- ausführbare Akzeptanzkriterien 
-- "Wartungszugang": z.B. Daten einspielen, exportieren
-
 Bewertungskriterium*:
 - funktional (was soll passieren)
 - nichtfunktional (wie soll es passieren: Performanztests (Last, Durchsatz, Latenz, Parallelität), Sicherheits/Pen-Test)
 - formal (wie stellt es sich dar: UI Tests)
 
-Entstehung:	
-- test-first/TDD: zielt auf Testbarkeit, Abdeckung
-- test-last/nachgelagert: Fokus auf Design, Fortschritt
-- ex post/"archäologisch": Aufbau von Verständnis, Sicherheitsnetz
--> hilft, Tests zu beurteilen: entstanden aus Anforderungen oder nur "Gerüst" um Legacy-Code
--> mglw. an der Beschreibung (Methodenname, Titel) oder Setup des Tests erkennbar oder am Stil (generiert)
-
-Zielgruppe und Syntax:
-- Entwickler/Tester (technisch, Code-nah)
-- Anwender/Fachbereich (natürlichsprachliche Frameworks wie Cucumber, FitNesse, Robot Test)
+Verifikation vs. Validierung*
+- Verifikation: arbeitet das System richtig? Isoliert/Mikrotests
+- Validierung: macht das System das Richtige? Integrativ/Systemtest
 
 Häufigkeit der Ausführung* (vgl. JUnit @Tag):
 - ständig (Entwicklung, IDE)
@@ -62,6 +49,25 @@ Fokus vs. Abdeckung*:
 - auflistend: bestimmte Usecases, Grenzfälle/Äquivalenzklassen (Unit-Tests, Akzeptanztests)
 - aufspannend: beliebig viele/unbestimmte Fälle (Bsp. Property-Tests)
 
+*Die folgenden Aspekte sind orthogonal zur Testpyramide*
+
+Zweck:
+- Dokumentation
+- Regressionsschutz
+- ausführbare Akzeptanzkriterien  
+- "Wartungszugang": z.B. Daten einspielen, exportieren
+
+Zielgruppe und Syntax:
+- Entwickler/Tester (technisch, Code-nah)
+- Anwender/Fachbereich (natürlichsprachliche Frameworks wie Cucumber, FitNesse, Robot Test)
+
+Entstehung:	
+- test-first/TDD: zielt auf Testbarkeit, Abdeckung
+- test-last/nachgelagert: Fokus auf Design, Fortschritt
+- ex post/"archäologisch": Aufbau von Verständnis, Sicherheitsnetz
+-> hilft, Tests zu beurteilen: entstanden aus Anforderungen oder nur "Gerüst" um Legacy-Code
+-> mglw. an der Beschreibung (Methodenname, Titel) oder Setup des Tests erkennbar oder am Stil (generiert)
+
 Fixpunkt (führendes Kriterium/Wahrheit):  
 *Beispiel: Example von https://github.com/maxbechtold/golden-master als Snapshot-Test*
 
@@ -69,7 +75,7 @@ Fixpunkt (führendes Kriterium/Wahrheit):
 
 - Anforderung/Problemverständnis: Neu/Weiterentwicklung
 - Status quo/Systemverhalten: Legacycode, Refactoring
-- fehlt manchmal, z.B. bei UI-Tests: Anwendung reparieren oder Test anpassen?
+- fehlt manchmal, z.B. wenn UI-Tests fehlschlagen: Anwendung reparieren oder Test anpassen?
 
 Stabilität? (TODO unklar)
 - fachliche vs. strukturelle Änderungen 
@@ -86,10 +92,6 @@ Erstellung ohne/mit Unterstützung:
 Testort:
 - ex situ/von außen (typisch): xUnit-Tests, Prüfung von Specs durch Frameworks
 - in situ/im Code: z.B. Contract Tests (C4J), (Java) assert-Anweisungen
-
-Verifikation vs. Validierung*
-- Verifikation: arbeitet das System richtig? Isoliert/Mikrotests
-- Validierung: macht das System das Richtige? Integrativ/Systemtest
 
 ### Bewertung von Tests
 *(Objektives Kriterium, Güte bzgl. Absicherung, nicht Wartbarkeit)*
