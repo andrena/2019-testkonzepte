@@ -34,12 +34,14 @@ Zweck:
 - Dokumentation
 - Regressionsschutz
 - ausführbare Akzeptanzkriterien 
+- "Wartungszugang": z.B. Daten einspielen, exportieren
 
 Bewertungskriterium*:
 - funktional (was soll passieren)
 - nichtfunktional (wie soll es passieren: Performanztests (Last, Durchsatz, Latenz, Parallelität), Sicherheits/Pen-Test)
+- formal (wie stellt es sich dar: UI Tests)
 
-Entstehung:
+Entstehung:	
 - test-first/TDD: zielt auf Testbarkeit, Abdeckung
 - test-last/nachgelagert: Fokus auf Design, Fortschritt
 - ex post/"archäologisch": Aufbau von Verständnis, Sicherheitsnetz
@@ -55,16 +57,21 @@ Häufigkeit der Ausführung* (vgl. JUnit @Tag):
 - punktuelle/wiederkehrend (Integration, CI-Server)
 - anlassbezogen (Deployment, Produktionsumgebung)
 
-Fokus vs. Abdeckung*:
+Fokus vs. Abdeckung*:  
+*Beispiel: jqwik Test*
 - auflistend: bestimmte Usecases, Grenzfälle/Äquivalenzklassen (Unit-Tests, Akzeptanztests)
 - aufspannend: beliebig viele/unbestimmte Fälle (Bsp. Property-Tests)
 
-Fixpunkt (führendes Kriterium/Wahrheit):
+Fixpunkt (führendes Kriterium/Wahrheit):  
+*Beispiel: Example von https://github.com/maxbechtold/golden-master als Snapshot-Test*
+
+"wie schreibe/betrachte ich meine Tests"
+
 - Anforderung/Problemverständnis: Neu/Weiterentwicklung
 - Status quo/Systemverhalten: Legacycode, Refactoring
-- Indeterministisches Verhalten, z.B. bei UI-Tests: kein klarer Fixpunkt
+- fehlt manchmal, z.B. bei UI-Tests: Anwendung reparieren oder Test anpassen?
 
-Stabilität?
+Stabilität? (TODO unklar)
 - fachliche vs. strukturelle Änderungen 
 
 Lebenszeit:
@@ -80,9 +87,9 @@ Testort:
 - ex situ/von außen (typisch): xUnit-Tests, Prüfung von Specs durch Frameworks
 - in situ/im Code: z.B. Contract Tests (C4J), (Java) assert-Anweisungen
 
-Validierung vs. Verifikation*
-- Validierung: macht das System das Richtige? Integrativ/Systemtest
+Verifikation vs. Validierung*
 - Verifikation: arbeitet das System richtig? Isoliert/Mikrotests
+- Validierung: macht das System das Richtige? Integrativ/Systemtest
 
 ### Bewertung von Tests
 *(Objektives Kriterium, Güte bzgl. Absicherung, nicht Wartbarkeit)*
