@@ -16,13 +16,9 @@ class: center, middle
 <br/>
 
 1. Motivation
-
 2. Aspekte der Testpyramide
-   
 3. Weitergehende Aspekte
-
 4. Bewertung von Tests (?)
-
 5. Fazit
 ]
 
@@ -51,9 +47,7 @@ TODO Polish image, highlight code
 .right-column[
 ### Fragen
 - Was charakterisiert Tests?
-
 - Wie unterscheiden sich Tests?
-
 - Wie sollte ich Tests betrachten?
 ]
 
@@ -71,9 +65,7 @@ TODO Polish image, highlight code
 .right-column[
 ### Isolierungsgrad
 - hoch: Unittests (Microtests), Mocking  
-
 - mittel: Komponententests, Tests mit Context / Abhängigkeiten (Beans)  
-  
 - gering: Integrations-/Systemtests  
 ]
 
