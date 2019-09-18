@@ -18,7 +18,7 @@ class: center, middle
 1. Motivation
 2. Aspekte der Testpyramide
 3. Weitergehende Aspekte
-4. Bewertung von Tests (?)
+4. Bewertung von Tests
 5. Fazit
 ]
 
@@ -27,7 +27,7 @@ class: center, middle
 
 ---
 
-background-image: url(img/starter-preliminary.png)
+background-image: url(img/starter-preliminary-small.png)
 
 .left-column[
 ### Motivation

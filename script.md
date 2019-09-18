@@ -104,7 +104,5 @@ oder F.I.R.S.T erwähnen
 - Auseinandersetzung mit Aspekten von Tests
 - Inspiration für eigene Projekte 
 
-### TODOs
-- *TODO FLO MAX Beispiele für Testtechnologien finden*
 
 
