@@ -5,22 +5,12 @@ Es gibt verschiedene Aspekte von Tests, die sich nicht nur an der Testpyramide f
 Viele dieser Aspekte sind unabhängig voneinander. So kann man z.B. mit JUnit verschiedene Arten von Tests schreiben, oder Tests auf derselben Ebene der Testpyramide unterscheiden sich bzgl. ihrer Aspekten/Eigenschaften.
 
 ### Testarten & -technologien
-*TODO im Verlauf vorstellen*
+*im Verlauf vorstellen*
 - Test by example (> MAX z.B. erstes JUnit Example aus ASE Javaweb)
 - Property-based (> Florian) 
-- Mutation Testing (> David?)
+- Mutation Testing (> David)
 - Snapshot-Testing (> Max)
-- parametrisierte Tests (> ?)
-
-### "Mensch vs. Maschine", Mächtigkeit (weglassen?)
-*TODO Achsendiagramm? Am Ende? Wie sinnvoll ist so eine harte Gegenüberstellung überhaupt?*  
-
-manuell/punktuell 					      |	automatisiert/systematisch 
---------------------------------- | -------------------------
-Funktion/Feature über UI prüfen		|	 Unit- oder Integrationstest 
-parametrisierte Tests        			|	 Property-based Tests 
-Code auskommentieren						  |  Mutation Testing (z.B. PIT) 
-UI-Test/visuelle Verifizierung		|	 Snapshot-Testing 
+- parametrisierte Tests (> Florian?)
 
 ### Eigenschaften von Tests
 *Einige Aspekte lassen sich in der Testpyramide verorten*
@@ -46,6 +36,7 @@ Häufigkeit der Ausführung* (vgl. JUnit @Tag):
 
 Fokus vs. Abdeckung*:  
 *Beispiel: jqwik Test*
+TODO FLO parametrisierte Tests
 - auflistend: bestimmte Usecases, Grenzfälle/Äquivalenzklassen (Unit-Tests, Akzeptanztests)
 - aufspannend: beliebig viele/unbestimmte Fälle (Bsp. Property-Tests)
 
@@ -77,9 +68,6 @@ Fixpunkt (führendes Kriterium/Wahrheit):
 - Status quo/Systemverhalten: Legacycode, Refactoring
 - fehlt manchmal, z.B. wenn UI-Tests fehlschlagen: Anwendung reparieren oder Test anpassen?
 
-Stabilität? (TODO unklar)
-- fachliche vs. strukturelle Änderungen 
-
 Lebenszeit:
 - handgeschrieben/gepflegt
 - Prototyping/Learning-Tests: Verstehen von Klassen, APIs
@@ -87,7 +75,8 @@ Lebenszeit:
 Erstellung ohne/mit Unterstützung:
 - handgeschrieben
 - handgeschrieben, aber generierter Input (Property Tests)
-- generierte Testfälle (z.B. testrecorder)
+- zur Laufzeit generierte Tests mit JUnit 5 Dynamic Tests
+- statisch generierte Testfälle (z.B. testrecorder)
 
 Testort:
 - ex situ/von außen (typisch): xUnit-Tests, Prüfung von Specs durch Frameworks
