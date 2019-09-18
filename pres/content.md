@@ -8,7 +8,6 @@ class: center, middle
 
 ---
 
-layout: false
 .left-column[
 ]
 
@@ -25,18 +24,14 @@ layout: false
 4. Bewertung von Tests (?)
 
 5. Fazit
-
 ]
 
 ---
 
 background-image: url(img/starter-preliminary.png)
 
-layout: false
-
 .left-column[
 ### Motivation
-
 ]
 
 .right-column[
@@ -49,22 +44,44 @@ TODO Polish image, highlight code
 
 ---
 
-layout: false
+.left-column[
+### Motivation
+]
+
+.right-column[
+### Fragen
+- Was charakterisiert Tests?
+
+- Wie unterscheiden sich Tests?
+
+- Wie sollte ich Tests betrachten?
+]
+
+???
+- typisch andrena: unterscheide Tests anhand der Testpyramide
+- aber: Fuß der Pyramide != Unittests (Microtests) 
+
+---
+
 .left-column[
 ### Motivation
 ### Aspekte der Test-pyramide
-
 ]
 
 .right-column[
 ### Isolierungsgrad
-- hoch: Unit-/Microtests, Mocking  
+- hoch: Unittests (Microtests), Mocking  
 
-- mittel: Komponenttests, Tests mit Context / Abhängigkeiten (Beans)  
+- mittel: Komponententests, Tests mit Context / Abhängigkeiten (Beans)  
   
 - gering: Integrations-/Systemtests  
-
-TODO (Umgedrehtes) Dreieck?
-
 ]
+
+???
+- Zeichne Testpyramide auf Flipchart
+- zeige Bezug der Aspekte zu ihr
+
+---
+
+
 

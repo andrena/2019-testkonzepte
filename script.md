@@ -110,6 +110,5 @@ Wiederholbarkeit der Messung:
 
 ### TODOs
 - *TODO FLO MAX Beispiele für Testtechnologien finden*
-- *TODO MAX Dave ansprechen zu PIT*
 
 
