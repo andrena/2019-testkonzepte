@@ -65,11 +65,11 @@ Entstehung:
 - test-first/TDD: zielt auf Testbarkeit, Abdeckung
 - test-last/nachgelagert: Fokus auf Design, Fortschritt
 - ex post/"archäologisch": Aufbau von Verständnis, Sicherheitsnetz
+*Beispiel: Example von https://github.com/maxbechtold/golden-master als Snapshot-Test*
 -> hilft, Tests zu beurteilen: entstanden aus Anforderungen oder nur "Gerüst" um Legacy-Code
 -> mglw. an der Beschreibung (Methodenname, Titel) oder Setup des Tests erkennbar oder am Stil (generiert)
 
 Fixpunkt (führendes Kriterium/Wahrheit):  
-*Beispiel: Example von https://github.com/maxbechtold/golden-master als Snapshot-Test*
 
 "wie schreibe/betrachte ich meine Tests"
 

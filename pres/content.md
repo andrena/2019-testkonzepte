@@ -181,3 +181,158 @@ Wie erreicht man eine signifikante Aussage über den Code?
 
 ???
 - FLO: Beispiel mit jqwik
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+### Weitergehende Aspekte
+]
+
+.right-column[
+TODO Ordentlich formatieren, siehe voriger Abschnitt
+###Zweck:
+- Dokumentation
+- Regressionsschutz
+- ausführbare Akzeptanzkriterien  
+- "Wartungszugang": z.B. Daten einspielen, exportieren
+]
+
+???
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+### Weitergehende Aspekte
+]
+
+.right-column[
+###Zielgruppe und Syntax:
+- Entwickler/Tester (technisch, Code-nah)
+- Anwender/Fachbereich (natürlichsprachliche Frameworks wie Cucumber, FitNesse, Robot Test)
+]
+
+???
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+### Weitergehende Aspekte
+]
+
+.right-column[
+###Entstehung:	
+- test-first/TDD: zielt auf Testbarkeit, Abdeckung
+- test-last/nachgelagert: Fokus auf Design, Fortschritt
+- ex post/"archäologisch": Aufbau von Verständnis, Sicherheitsnetz
+-> hilft, Tests zu beurteilen: entstanden aus Anforderungen oder nur "Gerüst" um Legacy-Code
+-> mglw. an der Beschreibung (Methodenname, Titel) oder Setup des Tests erkennbar oder am Stil (generiert)
+]
+
+???
+- Beispiel: Example von https://github.com/maxbechtold/golden-master als Snapshot-Test
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+### Weitergehende Aspekte
+]
+
+.right-column[
+###Fixpunkt 
+
+Wie schreibe/betrachte ich die Tests? Was ist die Prämisse?
+
+- **Fixpunkt Tests**, es gelten Anforderungen
+
+  *z.B. Neu-/Weiterentwicklung*
+
+- **Fixpunkt Code**, es gilt der Status quo, das Systemverhalten
+  
+  *bei Legacycode, Refactoring*
+
+- **undefinierter Fixpunkt**, wenn beides gilt
+  
+  *z.B. wenn UI-Tests fehlschlagen: Anwendung reparieren oder Test anpassen?*
+]
+
+???
+- Wo liegt die Wahrheit?
+- Grundlegend: Was passe ich an im Falle eines roten Tests?
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+### Weitergehende Aspekte
+]
+
+.right-column[
+###Lebenszeit:
+- handgeschrieben/gepflegt
+- Prototyping/Learning-Tests: Verstehen von Klassen, APIs
+]
+
+???
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+### Weitergehende Aspekte
+]
+
+.right-column[
+###Erstellung ohne/mit Unterstützung:
+- handgeschrieben
+- handgeschrieben, aber generierter Input (Property Tests)
+- generierte Testfälle (z.B. testrecorder)
+]
+
+???
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+### Weitergehende Aspekte
+]
+
+.right-column[
+###Testort:
+- ex situ/von außen (typisch): xUnit-Tests, Prüfung von Specs durch Frameworks
+- in situ/im Code: z.B. Contract Tests (C4J), (Java) assert-Anweisungen
+]
+
+???
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+### Weitergehende Aspekte
+]
+
+.right-column[
+###Zusammenfassung
+TODO MAX Ergänzen, tabellarisch?
+
+Aspekte der Testpyramide 					      |	Weitergehende Aspekte 
+--------------------------------- | -------------------------
+Isolierungsgrad		|	 tt
+Bewertungskriterium        			|	  ee
+Aussage						  |   
+Häufigkeit der Ausführung		|	  
+Fokus vs. Abdeckung | 
+]
