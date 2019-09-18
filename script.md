@@ -35,7 +35,7 @@ Bewertungskriterium*:
 - nichtfunktional (wie soll es passieren: Performanztests (Last, Durchsatz, Latenz, Parallelität), Sicherheits/Pen-Test)
 - formal (wie stellt es sich dar: UI Tests)
 
-Verifikation vs. Validierung*
+Aussage*
 - Verifikation: arbeitet das System richtig? Isoliert/Mikrotests
 - Validierung: macht das System das Richtige? Integrativ/Systemtest
 

@@ -45,10 +45,14 @@ TODO Polish image, highlight code
 ]
 
 .right-column[
-### Fragen
+### Fragen und Ziele
 - Was charakterisiert Tests?
 - Wie unterscheiden sich Tests?
 - Wie sollte ich Tests betrachten?
+
+**Ziele**
+- besseres Verständnis der Testbasis eigener Projekte 
+- Ideen und Ansatzpunkte zu deren Weiterentwicklung
 ]
 
 ???
@@ -64,9 +68,17 @@ TODO Polish image, highlight code
 
 .right-column[
 ### Isolierungsgrad
-- hoch: Unittests (Microtests), Mocking  
-- mittel: Komponententests, Tests mit Context / Abhängigkeiten (Beans)  
-- gering: Integrations-/Systemtests  
+- **hoch**
+  
+  Unittests (Microtests), Mocking  
+
+- **mittel**
+  
+  Komponententests, Tests mit Context / Abhängigkeiten (Beans)  
+
+- **gering**
+  
+  Integrations-/Systemtests  
 ]
 
 ???
@@ -75,5 +87,97 @@ TODO Polish image, highlight code
 
 ---
 
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+]
 
+.right-column[
+### Bewertungskriterium
+Was wird geprüft?  
+- **funktional**, "was soll passieren"
 
+  *typisch, Eingabe/Ergebnis-basiert*
+
+- **nichtfunktional**, "wie soll es passieren"  
+
+  *Performanztests (Last, Durchsatz, Latenz, Parallelität), Sicherheits/Pen-Test*
+
+- **formal**, "wie stellt es sich dar"  
+  
+  *UI-Tests, Approval-Tests*
+]
+
+???
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+]
+
+.right-column[
+###Aussage
+Was sagt mir der Test, wenn er gelingt oder fehlschlägt?  
+- **Verifikation**: "arbeitet das System richtig?"
+  
+  *Isoliert, z.B. Mikrotests*
+
+- **Validierung**: "macht das System das Richtige?  
+  
+  *Integrativ, z.B. Systemtests*
+]
+
+???
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+]
+
+.right-column[
+###Häufigkeit der Ausführung
+Wann und wie oft laufen die Tests?  
+- **ständig**  
+  
+  während Entwicklung, in IDE
+
+- **punktuell/wiederkehrend**
+  
+  zur Integration, auf CI-Server
+
+- **anlassbezogen** 
+  
+  zum Deployment, z.B auf Produktionsumgebung
+]
+
+???
+- vgl. JUnit `@Tag`
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+]
+
+.right-column[
+###Fokus vs. Abdeckung  
+
+Wie erreicht man eine signifikante Aussage über den Code?  
+
+- **auflistend**: Testen bestimmter Usecases, Grenzfälle oder Äquivalenzklassen
+  
+  *"Test by example" mit Microtests, Akzeptanztests*
+
+- **aufspannend**: Testen wechselnder oder unbestimmter Fälle
+  
+  *z.B. durch Property-Tests*
+
+]
+
+???
+- FLO: Beispiel mit jqwik
