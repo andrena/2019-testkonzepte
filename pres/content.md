@@ -22,6 +22,9 @@ class: center, middle
 5. Fazit
 ]
 
+???
+> MAX
+
 ---
 
 background-image: url(img/starter-preliminary.png)
@@ -35,6 +38,7 @@ TODO Polish image, highlight code
 ]
 
 ???
+> MAX
 - verschiedene Dimensionen/Aspekte anreißen
 - erster Beispiel-Test aus ASE Javaweb
 
@@ -56,6 +60,7 @@ TODO Polish image, highlight code
 ]
 
 ???
+> MAX
 - typisch andrena: unterscheide Tests anhand der Testpyramide
 - aber: Fuß der Pyramide != Unittests (Microtests) 
 
@@ -82,6 +87,7 @@ TODO Polish image, highlight code
 ]
 
 ???
+> FLO
 - Zeichne Testpyramide auf Flipchart
 - zeige Bezug der Aspekte zu ihr
 
@@ -109,6 +115,7 @@ Was wird geprüft?
 ]
 
 ???
+> MAX
 TODO Schnittstelle von Tests (UI vs. Microtests)
 ---
 
@@ -130,6 +137,7 @@ Was sagt mir der Test, wenn er gelingt oder fehlschlägt?
 ]
 
 ???
+> MAX
 
 ---
 
@@ -155,6 +163,7 @@ Wann und wie oft laufen die Tests?
 ]
 
 ???
+> FLO
 - vgl. JUnit `@Tag`
 - Risiko, wenn nicht regelmäßig ausgeführt
 
@@ -181,7 +190,8 @@ Wie erreicht man eine signifikante Aussage über den Code?
 ]
 
 ???
-- FLO: Beispiel mit jqwik
+> FLO
+- Beispiel mit jqwik
 
 ---
 
@@ -202,6 +212,7 @@ TODO Ordentlich formatieren, siehe voriger Abschnitt
 ]
 
 ???
+> FLO
 z.B. prüfe ob alle JUnit Tests benannt sind nach *Test
 
 ---
@@ -219,6 +230,7 @@ z.B. prüfe ob alle JUnit Tests benannt sind nach *Test
 ]
 
 ???
+> FLO
 
 ---
 
@@ -238,6 +250,7 @@ z.B. prüfe ob alle JUnit Tests benannt sind nach *Test
 ]
 
 ???
+> MAX
 - Beispiel: Example von https://github.com/maxbechtold/golden-master als Snapshot-Test
 
 ---
@@ -267,6 +280,7 @@ Wie schreibe/betrachte ich die Tests? Was ist die Prämisse?
 ]
 
 ???
+MAX
 - Wo liegt die Wahrheit?
 - Grundlegend: Was passe ich an im Falle eines roten Tests?
 
@@ -285,7 +299,7 @@ Wie schreibe/betrachte ich die Tests? Was ist die Prämisse?
 ]
 
 ???
-
+MAX
 ---
 
 .left-column[
@@ -302,7 +316,7 @@ Wie schreibe/betrachte ich die Tests? Was ist die Prämisse?
 ]
 
 ???
-
+> FLO
 ---
 
 .left-column[
@@ -318,7 +332,7 @@ Wie schreibe/betrachte ich die Tests? Was ist die Prämisse?
 ]
 
 ???
-
+> FLO
 ---
 
 .left-column[
@@ -339,3 +353,40 @@ Aussage						  |
 Häufigkeit der Ausführung		|	  
 Fokus vs. Abdeckung | 
 ]
+
+???
+> FLO
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+### Weitergehende Aspekte
+### Bewertung von Tests
+]
+
+.right-column[
+TODO DAVE
+]
+
+???
+> DAVE
+
+
+---
+
+.left-column[
+### Motivation
+### Aspekte der Test-pyramide
+### Weitergehende Aspekte
+### Bewertung von Tests
+### Fazit
+]
+
+.right-column[
+TODO MAX
+]
+
+???
+> MAX
