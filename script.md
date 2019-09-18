@@ -18,7 +18,9 @@ Viele dieser Aspekte sind unabhängig voneinander. So kann man z.B. mit JUnit ve
 Isolierungsgrad*:
 - hoch: Unit-/Microtests, Mocking
 - mittel: Komponenttests, Tests mit Context/Abhängigkeiten (Beans)
-- gering: Integrations-/Systemtests
+- gering: Integrations-/Systemtests/End-to-end-Tests
+  
+  TODO Kosten der Ausführung
 
 Bewertungskriterium*:
 - funktional (was soll passieren)
@@ -46,6 +48,7 @@ Zweck:
 - Dokumentation
 - Regressionsschutz
 - ausführbare Akzeptanzkriterien  
+- formale, syntaktische, strukturelle Zusicherungen
 - "Wartungszugang": z.B. Daten einspielen, exportieren
 
 Zielgruppe und Syntax:
@@ -71,12 +74,14 @@ Fixpunkt (führendes Kriterium/Wahrheit):
 Lebenszeit:
 - handgeschrieben/gepflegt
 - Prototyping/Learning-Tests: Verstehen von Klassen, APIs
+- TODO kurzlebige Snapshot-Tests
 
 Erstellung ohne/mit Unterstützung:
 - handgeschrieben
 - handgeschrieben, aber generierter Input (Property Tests)
 - zur Laufzeit generierte Tests mit JUnit 5 Dynamic Tests
-- statisch generierte Testfälle (z.B. testrecorder)
+- aufgezeichnete Testfälle (z.B. testrecorder)
+TODO generierte Testfälle (Kent Beck Test Generator)
 
 Testort:
 - ex situ/von außen (typisch): xUnit-Tests, Prüfung von Specs durch Frameworks
@@ -92,6 +97,8 @@ Aussagekraft:
 Wiederholbarkeit der Messung:
 - Testunabhängigkeit (z.B. permutierte oder parallele Ausführung)
 - geringe/stabile vs. hohe/variable Dauer der Ausführung
+
+oder F.I.R.S.T erwähnen
 
 ### Fazit
 - Auseinandersetzung mit Aspekten von Tests

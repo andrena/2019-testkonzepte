@@ -109,7 +109,7 @@ Was wird geprüft?
 ]
 
 ???
-
+TODO Schnittstelle von Tests (UI vs. Microtests)
 ---
 
 .left-column[
@@ -156,6 +156,7 @@ Wann und wie oft laufen die Tests?
 
 ???
 - vgl. JUnit `@Tag`
+- Risiko, wenn nicht regelmäßig ausgeführt
 
 ---
 
@@ -196,10 +197,12 @@ TODO Ordentlich formatieren, siehe voriger Abschnitt
 - Dokumentation
 - Regressionsschutz
 - ausführbare Akzeptanzkriterien  
+- formale, syntaktische, strukturelle Zusicherungen
 - "Wartungszugang": z.B. Daten einspielen, exportieren
 ]
 
 ???
+z.B. prüfe ob alle JUnit Tests benannt sind nach *Test
 
 ---
 
