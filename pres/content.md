@@ -61,7 +61,7 @@ background-image: url(img/starter-preliminary-small.png)
 ???
 > MAX
 - typisch andrena: unterscheide Tests anhand der Testpyramide
-- aber: Fuß der Pyramide != Unittests (Microtests) 
+- aber: vielleicht nicht alles
 
 ---
 
@@ -137,7 +137,8 @@ Was sagt mir der Test, wenn er gelingt oder fehlschlägt?
 
 ???
 > MAX
-
+- beides wichtig, Ying/Yang
+  
 ---
 
 .left-column[
@@ -240,7 +241,9 @@ TODO Ordentlich formatieren, siehe voriger Abschnitt
 ]
 
 .right-column[
-###Entstehung:	
+###Entstehung
+Wie kam es zum Test?
+
 - **test-first**, zielt auf Testbarkeit, Abdeckung
   
   *z.B. mit TDD*
@@ -301,7 +304,9 @@ MAX
 ]
 
 .right-column[
-###Lebenszeit:
+###Lebenszeit
+Wie lange überdauern Tests?
+
 - **eher lang**: handgeschriebene Tests, erfordert Pflegen
   
   *z.B. Integrationstests, Microtests*
@@ -310,7 +315,7 @@ MAX
 
   *z.B. Snapshot-Tests, gelten nur für aktuellen Stand der Codebasis*
 
-- **keine**, Tests gelangen meist nicht mal ins Repo
+- **gar nicht**, Tests gelangen meist nicht mal ins Repo
 
   *z.B. Tests zum Prototyping oder Learning-Tests: Verstehen von Klassen, APIs*
 ]
