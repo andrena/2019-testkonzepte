@@ -34,7 +34,6 @@ background-image: url(img/starter-preliminary-small.png)
 ]
 
 .right-column[
-TODO Polish image, highlight code
 ]
 
 ???
@@ -116,7 +115,7 @@ Was wird geprüft?
 
 ???
 > MAX
-TODO Schnittstelle von Tests (UI vs. Microtests)
+Anderes Merkmal von UI-Tests: Schnittstelle ( vs. Microtests, Systemtests)
 ---
 
 .left-column[
@@ -129,11 +128,11 @@ TODO Schnittstelle von Tests (UI vs. Microtests)
 Was sagt mir der Test, wenn er gelingt oder fehlschlägt?  
 - **Verifikation**: "arbeitet das System richtig?"
   
-  *Isoliert, z.B. Mikrotests*
+  *Blick auf Details, z.B. mit Mikrotests*
 
 - **Validierung**: "macht das System das Richtige?  
   
-  *Integrativ, z.B. Systemtests*
+  *Blick auf das Ganze, z.B. mit Akzeptanztests*
 ]
 
 ???
@@ -213,7 +212,7 @@ TODO Ordentlich formatieren, siehe voriger Abschnitt
 
 ???
 > FLO
-z.B. prüfe ob alle JUnit Tests benannt sind nach *Test
+- z.B. prüfe ob alle JUnit Tests benannt sind nach *Test
 
 ---
 
@@ -242,15 +241,24 @@ z.B. prüfe ob alle JUnit Tests benannt sind nach *Test
 
 .right-column[
 ###Entstehung:	
-- test-first/TDD: zielt auf Testbarkeit, Abdeckung
-- test-last/nachgelagert: Fokus auf Design, Fortschritt
-- ex post/"archäologisch": Aufbau von Verständnis, Sicherheitsnetz
--> hilft, Tests zu beurteilen: entstanden aus Anforderungen oder nur "Gerüst" um Legacy-Code
--> mglw. an der Beschreibung (Methodenname, Titel) oder Setup des Tests erkennbar oder am Stil (generiert)
+- **test-first**, zielt auf Testbarkeit, Abdeckung
+  
+  *z.B. mit TDD*
+
+- **test-last**, Fokus auf Design, Fortschritt
+
+  *Code schreiben, im Anschluss testen*
+
+- **ex post**, Aufbau von Verständnis, Sicherheitsnetz
+  
+  *"archäologisches" Vorgehen*
 ]
 
 ???
 > MAX
+- Frage: wer hat schon Erfahrung mit *ex post*?
+- mglw. an der Beschreibung (Methodenname, Titel) oder Setup des Tests erkennbar oder am Stil (generiert)
+- hilft, Tests zu beurteilen: entstanden aus Anforderungen oder nur "Gerüst" um Legacy-Code
 - Beispiel: Example von https://github.com/maxbechtold/golden-master als Snapshot-Test
 
 ---
@@ -272,7 +280,7 @@ Wie schreibe/betrachte ich die Tests? Was ist die Prämisse?
 
 - **Fixpunkt Code**, es gilt der Status quo, das Systemverhalten
   
-  *bei Legacycode, Refactoring*
+  *bei Legacy-Code, Refactoring*
 
 - **undefinierter Fixpunkt**, wenn beides gilt
   
@@ -281,8 +289,8 @@ Wie schreibe/betrachte ich die Tests? Was ist die Prämisse?
 
 ???
 MAX
+- Frage: Was mache ich im Falle eines roten Tests?
 - Wo liegt die Wahrheit?
-- Grundlegend: Was passe ich an im Falle eines roten Tests?
 
 ---
 
@@ -294,8 +302,17 @@ MAX
 
 .right-column[
 ###Lebenszeit:
-- handgeschrieben/gepflegt
-- Prototyping/Learning-Tests: Verstehen von Klassen, APIs
+- **eher lang**: handgeschriebene Tests, erfordert Pflegen
+  
+  *z.B. Integrationstests, Microtests*
+
+- **eher kurz**: automatisiert erstellt, leicht neu generiert
+
+  *z.B. Snapshot-Tests, gelten nur für aktuellen Stand der Codebasis*
+
+- **keine**, Tests gelangen meist nicht mal ins Repo
+
+  *z.B. Tests zum Prototyping oder Learning-Tests: Verstehen von Klassen, APIs*
 ]
 
 ???
@@ -343,15 +360,16 @@ MAX
 
 .right-column[
 ###Zusammenfassung
-TODO MAX Ergänzen, tabellarisch?
 
-Aspekte der Testpyramide 					      |	Weitergehende Aspekte 
+Aspekte der Testpyramide  |	Weitergehende Aspekte 
 --------------------------------- | -------------------------
-Isolierungsgrad		|	 tt
-Bewertungskriterium        			|	  ee
-Aussage						  |   
-Häufigkeit der Ausführung		|	  
-Fokus vs. Abdeckung | 
+Isolierungsgrad		|	Zweck
+Bewertungskriterium        			|	  Zielgruppe und Syntax
+Aussage						  |   Entstehung
+Häufigkeit der Ausführung		|	  Fixpunkt
+Fokus vs. Abdeckung     |  Lebenszeit
+                     |  Erstellung ohne / mit Unterstützung
+                     |  Testort
 ]
 
 ???
@@ -385,7 +403,10 @@ TODO DAVE
 ]
 
 .right-column[
-TODO MAX
+### Abschließend
+
+- wenig Neues, sondern Einordnen von Bekanntem
+- Anreiz um Property, Mutation oder Snapshot-Testing auszuprobieren?
 ]
 
 ???

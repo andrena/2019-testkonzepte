@@ -74,7 +74,6 @@ Fixpunkt (führendes Kriterium/Wahrheit):
 Lebenszeit:
 - handgeschrieben/gepflegt
 - Prototyping/Learning-Tests: Verstehen von Klassen, APIs
-- TODO kurzlebige Snapshot-Tests
 
 Erstellung ohne/mit Unterstützung:
 - handgeschrieben
