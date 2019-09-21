@@ -74,7 +74,7 @@ background-image: url(img/starter-preliminary-small.png)
 ### Isolierungsgrad
 - **hoch**
   
-  Unittests (Microtests), Mocking  
+  Unittests/Microtests (Mocking)
 
 - **mittel**
   
@@ -90,7 +90,7 @@ background-image: url(img/starter-preliminary-small.png)
 - Zeichne Testpyramide auf Flipchart
 - zeige Bezug der Aspekte zu ihr
 - Black-/White-Box (typischerweise: je "dunkler" desto stabiler gegenüber Refactorings)
-- Menge des getesteten Codes
+- Menge des getesteten/durchlaufenen Codes pro Test
 
 ---
 
@@ -197,7 +197,7 @@ Wie erreicht man eine signifikante Aussage über den Code?
 ???
 > FLO
 - Beispiel mit jqwik
-
+- Parametrisierte Tests als Zwischenform, eigentlich auflistend, aber vereinfacht Setup, sodass viele Usecases mit wenig Aufwand getestet werden können 
 ---
 
 .left-column[
@@ -208,8 +208,8 @@ Wie erreicht man eine signifikante Aussage über den Code?
 
 .right-column[
 ###Zweck:
-- **Dokumentation**
 - **Regressionsschutz**
+- **Dokumentation**
 - **ausführbare Akzeptanzkriterien**
 - **formale, syntaktische, strukturelle Zusicherungen**
 - **"Wartungszugang"**: z.B. Daten einspielen, exportieren
@@ -217,7 +217,8 @@ Wie erreicht man eine signifikante Aussage über den Code?
 
 ???
 > FLO
-- z.B. prüfe ob alle JUnit Tests benannt sind nach *Test
+- z.B. prüfe ob alle JUnit Tests benannt sind nach *Test, Zugriff zwischen Komponenten prüfen
+- Wartungszugang: z.B. Cdi-Context aufsetzen mit Framework um Rest-Service aufzurufen
 
 ---
 
@@ -240,6 +241,9 @@ Wie erreicht man eine signifikante Aussage über den Code?
 
 ???
 > FLO
+- Selenium IDE
+- Tester manchmal auch eher zweiter Kategorie zuzuordnen
+- keine tieferen technischen Kenntnisse nötig, wenn Glue Code von Entwicklern aufgesetzt wird
 
 ---
 
@@ -340,10 +344,17 @@ MAX
 ]
 
 .right-column[
-###Erstellung ohne/mit Unterstützung:
-- handgeschrieben
-- handgeschrieben, aber generierter Input (Property Tests)
-- generierte Testfälle (z.B. testrecorder)
+###Erstellung
+ohne/mit Tool Unterstützung:
+
+- **handgeschrieben**
+
+- **handgeschrieben, aber generierter Input**
+
+  *Property-based Tests*
+- **generierte Testfälle**
+
+  *z.B. Testrecorder*
 ]
 
 ???
@@ -358,12 +369,18 @@ MAX
 
 .right-column[
 ###Testort:
-- ex situ/von außen (typisch): xUnit-Tests, Prüfung von Specs durch Frameworks
-- in situ/im Code: z.B. Contract Tests (C4J), (Java) assert-Anweisungen
+- **ex situ/von außen** getrennt vom Code
+
+  xUnit-Tests, Prüfung von Specs durch Frameworks
+
+- **in situ/im Code**
+
+  z.B. Contract Tests (C4J), (Java) assert Anweisungen
 ]
 
 ???
 > FLO
+- von außen ist typisch
 ---
 
 .left-column[
