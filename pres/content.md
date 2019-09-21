@@ -207,7 +207,7 @@ Wie erreicht man eine signifikante Aussage über den Code?
 ]
 
 .right-column[
-###Zweck:
+###Zweck
 - **Regressionsschutz**
 - **Dokumentation**
 - **ausführbare Akzeptanzkriterien**
@@ -229,7 +229,7 @@ Wie erreicht man eine signifikante Aussage über den Code?
 ]
 
 .right-column[
-###Zielgruppe und Syntax:
+###Zielgruppe und Syntax
 - **Entwickler/Tester**
 
   technisch, Code-nah
@@ -368,7 +368,7 @@ ohne/mit Tool Unterstützung:
 ]
 
 .right-column[
-###Testort:
+###Testort
 - **ex situ/von außen** getrennt vom Code
 
   xUnit-Tests, Prüfung von Specs durch Frameworks
@@ -399,7 +399,7 @@ Bewertungskriterium        			|	  Zielgruppe und Syntax
 Aussage						  |   Entstehung
 Häufigkeit der Ausführung		|	  Fixpunkt
 Fokus vs. Abdeckung     |  Lebenszeit
-                     |  Erstellung ohne / mit Unterstützung
+                     |  Erstellung
                      |  Testort
 ]
 
