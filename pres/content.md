@@ -89,6 +89,8 @@ background-image: url(img/starter-preliminary-small.png)
 > FLO
 - Zeichne Testpyramide auf Flipchart
 - zeige Bezug der Aspekte zu ihr
+- Black-/White-Box (typischerweise: je "dunkler" desto stabiler gegenüber Refactorings)
+- Menge des getesteten Codes
 
 ---
 
@@ -166,6 +168,9 @@ Wann und wie oft laufen die Tests?
 > FLO
 - vgl. JUnit `@Tag`
 - Risiko, wenn nicht regelmäßig ausgeführt
+- Laufzeit
+- Für Eclipse: Infinitest Plugin
+- Kosten der Ausführung (kostenpflichtige Schnittstelle)
 
 ---
 
@@ -202,13 +207,12 @@ Wie erreicht man eine signifikante Aussage über den Code?
 ]
 
 .right-column[
-TODO Ordentlich formatieren, siehe voriger Abschnitt
 ###Zweck:
-- Dokumentation
-- Regressionsschutz
-- ausführbare Akzeptanzkriterien  
-- formale, syntaktische, strukturelle Zusicherungen
-- "Wartungszugang": z.B. Daten einspielen, exportieren
+- **Dokumentation**
+- **Regressionsschutz**
+- **ausführbare Akzeptanzkriterien**
+- **formale, syntaktische, strukturelle Zusicherungen**
+- **"Wartungszugang"**: z.B. Daten einspielen, exportieren
 ]
 
 ???
@@ -225,8 +229,13 @@ TODO Ordentlich formatieren, siehe voriger Abschnitt
 
 .right-column[
 ###Zielgruppe und Syntax:
-- Entwickler/Tester (technisch, Code-nah)
-- Anwender/Fachbereich (natürlichsprachliche Frameworks wie Cucumber, FitNesse, Robot Test)
+- **Entwickler/Tester**
+
+  technisch, Code-nah
+
+- **Anwender/Fachbereich**
+
+  natürlichsprachliche Frameworks wie Cucumber, FitNesse, Robot Test
 ]
 
 ???

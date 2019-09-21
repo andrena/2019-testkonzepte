@@ -19,8 +19,6 @@ Isolierungsgrad*:
 - hoch: Unit-/Microtests, Mocking
 - mittel: Komponenttests, Tests mit Context/Abhängigkeiten (Beans)
 - gering: Integrations-/Systemtests/End-to-end-Tests
-  
-  TODO Kosten der Ausführung
 
 Bewertungskriterium*:
 - funktional (was soll passieren)
