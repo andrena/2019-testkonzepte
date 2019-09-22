@@ -78,7 +78,7 @@ background-image: url(img/starter-preliminary-small.png)
 
 - **mittel**
   
-  Komponententests, Tests mit Context / Abhängigkeiten (Beans)  
+  Komponententests, Tests mit Kontext / Abhängigkeiten
 
 - **gering**
   
@@ -87,7 +87,9 @@ background-image: url(img/starter-preliminary-small.png)
 
 ???
 > FLO
-- Zeichne Testpyramide auf Flipchart
+- Microtests als Begriff einführen
+  - Begriff Unittests überladen, wird auch für integrativere Tests gebraucht
+- Zeichne Testpyramide auf Flipchart (auf drei Ebenen beschränken: Microtests, Komponententests, Integrations-/Systemtests)
 - zeige Bezug der Aspekte zu ihr
 - Black-/White-Box (typischerweise: je "dunkler" desto stabiler gegenüber Refactorings)
 - Menge des getesteten/durchlaufenen Codes pro Test
@@ -166,11 +168,12 @@ Wann und wie oft laufen die Tests?
 
 ???
 > FLO
-- vgl. JUnit `@Tag`
+- Gründe für nicht ständige Ausführung:
+  - Laufzeit
+  - Kosten der Ausführung (kostenpflichtige Schnittstelle)
 - Risiko, wenn nicht regelmäßig ausgeführt
-- Laufzeit
+- Technische Möglichkeit zur Gruppierung: JUnit `@Tag`
 - Für Eclipse: Infinitest Plugin
-- Kosten der Ausführung (kostenpflichtige Schnittstelle)
 
 ---
 
@@ -184,13 +187,17 @@ Wann und wie oft laufen die Tests?
 
 Wie erreicht man eine signifikante Aussage über den Code?  
 
-- **auflistend**: Testen bestimmter Usecases, Grenzfälle oder Äquivalenzklassen
+- **auflistend**
+
+  Testen bestimmter Usecases, Grenzfälle oder Äquivalenzklassen
   
   *"Test by example" mit Microtests, Akzeptanztests*
 
-- **aufspannend**: Testen wechselnder oder unbestimmter Fälle
+- **aufspannend**
+
+  Testen wechselnder oder unbestimmter Fälle
   
-  *z.B. durch Property-Tests*
+  *z.B. durch Property-based Tests*
 
 ]
 
@@ -212,12 +219,17 @@ Wie erreicht man eine signifikante Aussage über den Code?
 - **Dokumentation**
 - **ausführbare Akzeptanzkriterien**
 - **formale, syntaktische, strukturelle Zusicherungen**
-- **"Wartungszugang"**: z.B. Daten einspielen, exportieren
+- **"Wartungszugang"**
+
+  *z.B. Daten einspielen/exportieren*
 ]
 
 ???
 > FLO
-- z.B. prüfe ob alle JUnit Tests benannt sind nach *Test, Zugriff zwischen Komponenten prüfen
+- Regressionsschutz: bei Umbau/Refactoring
+- Dokumentation: wie benutzt man eine Klasse/Komponente
+- Akzeptanzkriterien: was soll fachlich passieren
+- Zusicherungen: keine fachliche Prüfung, z.B. prüfe ob alle JUnit Tests benannt sind nach *Test, Zugriff zwischen Komponenten prüfen (ArchUnit)
 - Wartungszugang: z.B. Cdi-Context aufsetzen mit Framework um Rest-Service aufzurufen
 
 ---
@@ -241,9 +253,12 @@ Wie erreicht man eine signifikante Aussage über den Code?
 
 ???
 > FLO
-- Selenium IDE
+- Entwickler: Tests in gleicher Sprache wie produktiver Code
+- Tester: z.B. Selenium IDE (Browser Plugin zum Aufzeichen und Abspielen von Selenium Tests)
 - Tester manchmal auch eher zweiter Kategorie zuzuordnen
-- keine tieferen technischen Kenntnisse nötig, wenn Glue Code von Entwicklern aufgesetzt wird
+- Anwender/Fachbereich
+  - keine tieferen technischen Kenntnisse nötig, wenn Glue Code von Entwicklern aufgesetzt wird
+  - Fokus auf fachliche Konstellationen und nicht auf technisches Grundgerüst
 
 ---
 
@@ -359,6 +374,8 @@ ohne/mit Tool Unterstützung:
 
 ???
 > FLO
+- Standardfall: handgeschrieben
+- Testrecorder von Stefan
 ---
 
 .left-column[
@@ -369,18 +386,20 @@ ohne/mit Tool Unterstützung:
 
 .right-column[
 ###Testort
-- **ex situ/von außen** getrennt vom Code
+- **ex situ/von außen**
 
-  xUnit-Tests, Prüfung von Specs durch Frameworks
+  getrennt vom Code
+
+  *xUnit-Tests, Prüfung von Specs durch Frameworks*
 
 - **in situ/im Code**
 
-  z.B. Contract Tests (C4J), (Java) assert Anweisungen
+  *z.B. Contract Tests (C4J), (Java) assert Anweisungen*
 ]
 
 ???
 > FLO
-- von außen ist typisch
+- "von außen" ist typisch, dabei werden Tests nicht durchlaufen, wenn Anwendung läuft 
 ---
 
 .left-column[
