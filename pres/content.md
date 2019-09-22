@@ -171,7 +171,10 @@ Wann und wie oft laufen die Tests?
 - Gründe für nicht ständige Ausführung:
   - Laufzeit
   - Kosten der Ausführung (kostenpflichtige Schnittstelle)
+  - (In-)Stabilität von Schnittstellen
 - Risiko, wenn nicht regelmäßig ausgeführt
+  - spätes Feedback
+  - Tests nicht mehr funktionsfähig
 - Technische Möglichkeit zur Gruppierung: JUnit `@Tag`
 - Für Eclipse: Infinitest Plugin
 
@@ -229,7 +232,7 @@ Wie erreicht man eine signifikante Aussage über den Code?
 - Regressionsschutz: bei Umbau/Refactoring
 - Dokumentation: wie benutzt man eine Klasse/Komponente
 - Akzeptanzkriterien: was soll fachlich passieren
-- Zusicherungen: keine fachliche Prüfung, z.B. prüfe ob alle JUnit Tests benannt sind nach *Test, Zugriff zwischen Komponenten prüfen (ArchUnit)
+- Zusicherungen: keine fachliche Prüfung, z.B. prüfe ob alle JUnit Tests benannt sind nach *Test, Zugriff zwischen Komponenten prüfen (ArchUnit), Zyklenprüfung
 - Wartungszugang: z.B. Cdi-Context aufsetzen mit Framework um Rest-Service aufzurufen
 
 ---
