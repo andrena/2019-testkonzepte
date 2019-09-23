@@ -370,7 +370,7 @@ ohne/mit Tool Unterstützung:
 - **handgeschrieben, aber generierter Input**
 
   *Property-based Tests*
-- **generierte Testfälle**
+- **aufgezeichnete Testfälle**
 
   *z.B. Testrecorder*
 ]
@@ -379,6 +379,7 @@ ohne/mit Tool Unterstützung:
 > FLO
 - Standardfall: handgeschrieben
 - Testrecorder von Stefan
+- ggf. generierte Testfälle erwähnen
 ---
 
 .left-column[
