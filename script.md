@@ -36,7 +36,6 @@ Häufigkeit der Ausführung* (vgl. JUnit @Tag):
 
 Fokus vs. Abdeckung*:  
 *Beispiel: jqwik Test*
-TODO FLO parametrisierte Tests
 - auflistend: bestimmte Usecases, Grenzfälle/Äquivalenzklassen (Unit-Tests, Akzeptanztests)
 - aufspannend: beliebig viele/unbestimmte Fälle (Bsp. Property-Tests)
 

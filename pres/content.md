@@ -439,7 +439,7 @@ Fokus vs. Abdeckung     |  Lebenszeit
 ]
 
 .right-column[
-TODO DAVE
+
 ]
 
 ???
