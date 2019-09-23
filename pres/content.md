@@ -118,8 +118,8 @@ Was wird geprüft?
 ]
 
 ???
-> MAX
-Anderes Merkmal von UI-Tests: Schnittstelle ( vs. Microtests, Systemtests)
+> MAX  
+- Anderes Merkmal von UI-Tests: Schnittstelle ( vs. Microtests, Systemtests)
 ---
 
 .left-column[
@@ -322,7 +322,7 @@ Wie schreibe/betrachte ich die Tests? Was ist die Prämisse?
 ]
 
 ???
-MAX
+> MAX
 - Frage: Was mache ich im Falle eines roten Tests?
 - Wo liegt die Wahrheit?
 
@@ -352,7 +352,7 @@ Wie lange überdauern Tests?
 ]
 
 ???
-MAX
+> MAX
 ---
 
 .left-column[
